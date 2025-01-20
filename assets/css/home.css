@@ -7,23 +7,22 @@ body {
     background-color: #d4d4d4;
 }
 
+.bold {
+  font-weight: bold;
+  color: var(--secondary);
+}
+
 .hero {
     position: relative;
     background-image: url(../img/Black-Banner-Free-PNG-Image.png);
     background-size: cover;
     background-position: center;
-    height: 20vh; 
+    height: 10vh; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.bold {
-    font-weight: bold;
-    color: var(--secondary);
-  }
-
-/* Title styling */
 .hero h1 {
     color: var(--secondary);
     font-size: 80px;
@@ -34,29 +33,29 @@ body {
     display: flex;
     justify-content: space-between; /* Ensures space between the two containers */
     align-items: center; /* Vertically align the items to the center */
-    padding: 20px;
+    padding: 5px;
   }
   
   .purpose-container {
-    flex: 1; /* Takes up 50% of the container */
-    padding: 2rem;
-  }
-  
-  .purpose h2 {
-    text-align: center;
-    font-size: 90px;
-    color:black;
-  }
-  
-  .purpose p {
-    font-size: 25px;
-    position: relative;
-    left: 150px;
+    flex: 1; 
+    padding: 1rem;
   }
 
   .purpose-title {
     position: relative;
     margin-bottom: 1rem;
+  }
+  
+  .purpose h2 {
+    text-align: center;
+    font-size: 70px;
+    color:black;
+  }
+  
+  .purpose p {
+    font-size: 20px;
+    position: relative;
+    left: 200px;
   }
 
   .purpose-title::after {
@@ -66,13 +65,17 @@ body {
     bottom: -0.25rem;
     width: calc(100% + 1rem);
     background-color: var(--secondary);
-    left: 5rem;
+    left: 10rem;
     border-radius: 0px 10px 10px 0px; 
     z-index: -1;
 
     transform:scaleX(0.075);
     transform-origin: left;
     transition: transform 250ms ease-in;
+  }
+
+  .purpose:hover .purpose-title::after {
+    transform: scaleX(1);
   }
 
   .purpose-content {
@@ -102,23 +105,19 @@ body {
     color:white;
   }
 
-  .purpose:hover .purpose-title::after {
-    transform: scaleX(1);
-  }
-
   .purpose:hover .purpose-content::after {
     transform: scaleY(1);
   }
   
   .image-container {
-    flex: 1; /* Takes up 50% of the container */
+    flex: 1; 
     padding: 2rem;
-    text-align: center; /* Center the image inside the container */
+    text-align: center; 
   }
   
   .image img {
     max-width: 100%; /* Ensures the image doesn't overflow */
-    height: 600px;
+    height: 550px;
     border: 10px solid black;
     border-radius: 10px;
   }
